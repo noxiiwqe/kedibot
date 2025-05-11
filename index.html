@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot - Resmi Web Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="https://media.discordapp.net/attachments/1341827080974897234/1367477859916185782/0b25e27e8c19b8c0a842be03a96267b0.png?ex=682140c0&is=681fef40&hm=d306f764c96e3034fb9b976d43c1c532753e40d41f365d37dbf0156c6ef9173e&=&format=webp&quality=lossless&width=500&height=500" alt="Bot Logo" onerror="this.src='https://via.placeholder.com/40'"> 
+                    <span>DiscordBot</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#features">Özellikler</a></li>
+                    <li><a href="#commands">Komutlar</a></li>
+                    <li><a href="#about">Hakkında</a></li>
+                    <li><a href="#faq">S.S.S</a></li>
+                    <li><a href="https://discord.gg/GD3AYF6QhN" target="_blank" class="discord-btn">
+                        <i class="fab fa-discord"></i> Destek Sunucusu
+                    </a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Bölümü -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Sunucunuz İçin Mükemmel Bot">Sunucunuz İçin Mükemmel Bot</h1>
+                <p>Public, müzik, oyunlar ve çok daha fazlası için tasarlanmış Discord botumuz</p>
+                <div class="hero-buttons">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1363106093290623097&permissions=8&integration_type=0&scope=bot" class="btn btn-primary">
+                        <i class="fas fa-robot"></i> Bot'u Davet Et
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-chevron-down"></i> Daha Fazla Keşfet
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value" id="serverCount">0</span>
+                        <span class="stat-label">Sunucu</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="userCount">0</span>
+                        <span class="stat-label">Kullanıcı</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="commandCount">0</span>
+                        <span class="stat-label">Komut</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://media.discordapp.net/attachments/1341827080974897234/1367477859916185782/0b25e27e8c19b8c0a842be03a96267b0.png?ex=682140c0&is=681fef40&hm=d306f764c96e3034fb9b976d43c1c532753e40d41f365d37dbf0156c6ef9173e&=&format=webp&quality=lossless&width=500&height=500" alt="Bot Showcase" onerror="this.src='https://via.placeholder.com/500x300'">
+                <div class="blob"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Özellikler Bölümü -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Özellikler</h2>
+                <p>Botumuzun sunduğu güçlü özelliklerle sunucunuzu geliştirin</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Moderasyon</h3>
+                    <p>Otomatik moderasyon, filtreler, uyarılar ve kullanıcı yönetimi için güçlü araçlar</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Müzik</h3>
+                    <p>YouTube, Spotify ve daha fazlasından yüksek kaliteli müzik çalma özelliği</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Oyunlar</h3>
+                    <p>Kullanıcılarınızı eğlendirmek için birçok mini oyun ve aktivite</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>İstatistikler</h3>
+                    <p>Sunucunuz ve üyeleriniz için detaylı istatistikler ve grafikler</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>özelleştirme</h3>
+                    <p>Sunucunuza özel ayarlar ve yapılandırmala</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Komutlar Bölümü -->
+    <section id="commands" class="commands">
+        <div class="container">
+            <div class="section-header">
+                <h2>Komutlar</h2>
+                <p>En popüler komutlarımızdan bazıları</p>
+            </div>
+            <div class="commands-container">
+                <div class="command-tabs">
+                    <button class="tab-btn active" data-category="all">Tümü</button>
+                    <button class="tab-btn" data-category="mod">Moderasyon</button>
+                    <button class="tab-btn" data-category="fun">Eğlence</button>
+                    <button class="tab-btn" data-category="util">Araçlar</button>
+                </div>
+                <div class="commands-list">
+                    <div class="discord-message-container">
+                        <div class="discord-message command-item" data-category="all mod">
+                            <div class="message-avatar">
+                                <span>/</span>
+                            </div>
+                            <div class="message-content">
+                                <div class="message-command">ban</div>
+                                <div class="message-description">Bir kullanıcıyı sunucudan yasakla</div>
+                            </div>
+                        </div>
+                        <div class="discord-message command-item" data-category="all mod">
+                            <div class="message-avatar">
+                                <span>/</span>
+                            </div>
+                            <div class="message-content">
+                                <div class="message-command">kick</div>
+                                <div class="message-description">Bir kullanıcıyı sunucudan at</div>
+                            </div>
+                        </div>
+                        <div class="discord-message command-item" data-category="all mod">
+                            <div class="message-avatar">
+                                <span>/</span>
+                            </div>
+                            <div class="message-content">
+                                <div class="message-command">temizle</div>
+                                <div class="message-description">Belirtilen miktarda mesajı sil</div>
+                            </div>
+                        </div>
+                        <div class="discord-message command-item" data-category="all music">
+                            <div class="message-avatar">
+                                <span>/</span>
+                            </div>
+                            <div class="message-content">
+                                <div class="message-command">çal</div>
+                                <div class="message-description">Bir şarkı çal veya sıraya ekle</div>
+                            </div>
+                        </div>
+                        <div class="discord-message command-item" data-category="all music">
+                            <div class="message-avatar">
+                                <span>/</span>
+                            </div>
+                            <div class="message-content">
+                                <div class="message-command">sıra</div>
+                                <div class="message-description">Şarkı sırasını görüntüle</div>
+                            </div>
+                        </div>
+                        <div class="discord-message command-item" data-category="all fun">
+                            <div class="message-avatar">
+                                <span>/</span>
+                            </div>
+                            <div class="message-content">
+                                <div class="message-command">bilgi</div>
+                                <div class="message-description">Kullanıcı veya sunucu bilgilerini göster</div>
+                            </div>
+                        </div>
+                        <div class="discord-message command-item" data-category="all util">
+                            <div class="message-avatar">
+                                <span>/</span>
+                            </div>
+                            <div class="message-content">
+                                <div class="message-command">avatar</div>
+                                <div class="message-description">Bir kullanıcının avatarını görüntüle</div>
+                            </div>
+                        </div>
+                        <div class="discord-message command-item" data-category="all util">
+                            <div class="message-avatar">
+                                <span>/</span>
+                            </div>
+                            <div class="message-content">
+                                <div class="message-command">hatırlatıcı</div>
+                                <div class="message-description">Kendine bir hatırlatıcı oluştur</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commands-more">
+                    <a href="https://discord.gg/botunuz" class="btn btn-secondary">
+                        <i class="fas fa-list"></i> Tüm Komutları Gör
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bot Hakkında Bölümü -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://media.discordapp.net/attachments/1341827080974897234/1367477859916185782/0b25e27e8c19b8c0a842be03a96267b0.png?ex=682140c0&is=681fef40&hm=d306f764c96e3034fb9b976d43c1c532753e40d41f365d37dbf0156c6ef9173e&=&format=webp&quality=lossless&width=500&height=500" alt="Bot Hakkında" onerror="this.src='https://via.placeholder.com/500x300'">
+                    <div class="discord-status online"></div>
+                </div>
+                <div class="about-text">
+                    <h2>Hakkımızda</h2>
+                    <p>Discord botumuz, sunucunuzu daha etkili ve eğlenceli hale getirmek için tasarlanmıştır. Gelişmiş moderasyon araçları, yüksek kaliteli müzik çalar, eğlence komutları ve daha birçok özellik ile donatılmıştır.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check"></i>
+                            <span>7/24 Çalışma</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Düzenli Güncellemeler</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Ücretsiz Kullanım</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Hızlı Destek</span>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="https://discord.com/oauth2/authorize?client_id=1363106093290623097&permissions=8&integration_type=0&scope=bot" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Botu Ekle
+                        </a>
+                        <a href="https://discord.gg/GD3AYF6QhN" class="btn btn-secondary">
+                            <i class="fab fa-discord"></i> Destek Sunucusu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SSS Bölümü -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sıkça Sorulan Sorular</h2>
+                <p>Merak ettiğiniz soruların cevapları</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bot nasıl davet edilir?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Botu davet etmek için web sitemizdeki "Bot'u Davet Et" butonuna tıklayabilir veya destek sunucumuza katılıp oradan davet bağlantısı alabilirsiniz. Discord'un OAuth2 sayfasına yönlendirileceksiniz, burada botun izinlerini seçip sunucunuza ekleyebilirsiniz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bot ücretsiz mi?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, botumuz temel özellikleriyle tamamen ücretsizdir. Ancak, daha fazla özellik ve öncelikli destek için Premium paketlerimiz bulunmaktadır. Premium özellikler hakkında daha fazla bilgi için destek sunucumuza katılabilirsiniz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bot neden çalışmıyor?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Botun çalışmamasının birkaç nedeni olabilir: Discord'un API'sinde yaşanan sorunlar, botun bakımda olması veya sunucunuzda doğru izinlere sahip olmaması. Sorunu çözmek için önce botun sunucunuzda doğru izinlere sahip olduğundan emin olun. Sorun devam ederse destek sunucumuza katılarak yardım alabilirsiniz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Komutları nasıl kullanabilirim?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Botumuz, Discord'un slash komut sistemini kullanmaktadır. Bir komut kullanmak için mesaj kutusuna "/" yazın ve botun komutları görünecektir. Alternatif olarak, "!yardım" komutunu kullanarak tüm komutların listesini görüntüleyebilirsiniz.</p>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://media.discordapp.net/attachments/1341827080974897234/1367477859916185782/0b25e27e8c19b8c0a842be03a96267b0.png?ex=682140c0&is=681fef40&hm=d306f764c96e3034fb9b976d43c1c532753e40d41f365d37dbf0156c6ef9173e&=&format=webp&quality=lossless&width=500&height=500" alt="Bot Logo" onerror="this.src='https://via.placeholder.com/40'">
+                    <span>DiscordBot</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Bağlantılar</h3>
+                        <ul>
+                            <li><a href="#home">Ana Sayfa</a></li>
+                            <li><a href="#features">Özellikler</a></li>
+                            <li><a href="#commands">Komutlar</a></li>
+                            <li><a href="#about">Hakkında</a></li>
+                            <li><a href="#faq">S.S.S</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Destek</h3>
+                        <ul>
+                            <li><a href="https://discord.gg/GD3AYF6QhN">Discord Sunucusu</a></li>
+                            <li><a href="#">Gizlilik Politikası</a></li>
+                            <li><a href="#">Kullanım Şartları</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Sosyal Medya</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 DiscordBot - Tüm Hakları Saklıdır</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Geri Yukarı Butonu -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
